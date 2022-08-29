@@ -19,7 +19,7 @@ jobs:
          REACT_APP_API_KEY : ${{ secrets.REACT_APP_API_KEY }}
 
       - name : Deploy
-        uses : JamesIves/github-pages-deploy-action@releases/v4
+      - uses : JamesIves/github-pages-deploy-action@releases/v4
         with :
          GITHUB_TOKEN : ${{ secrets.GH_TOKEN }}
          BRANCH : gh-pages
